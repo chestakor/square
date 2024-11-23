@@ -1,7 +1,9 @@
 const express = require('express');
 const app = express();
 
-// Define the route
+// Enable pretty JSON formatting
+app.set('json spaces', 2);
+
 app.get('/result', (req, res) => {
   const num = parseFloat(req.query.num);
 
