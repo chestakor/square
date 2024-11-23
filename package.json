@@ -1,0 +1,12 @@
+{
+  "name": "square-api",
+  "version": "1.0.0",
+  "description": "A simple API to calculate the square of a number",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js"
+  },
+  "dependencies": {
+    "express": "^4.18.2"
+  }
+}
