@@ -113,10 +113,12 @@ app.get('/result', async (req, res) => {
       });
     }
   } catch (error) {
-    console.error("Error fetching Crunchyroll details:", error.message);
+    console.error("Error occurred during API call:", error.response ? error.response.data : error.message);
+
     return res.status(500).json({
       status: "error",
       message: "An error occurred while processing the request.",
+      error: error.response ? error.response.data : error.message
     });
   }
 });
