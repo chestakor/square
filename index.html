@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tool Titan</title>
+  <link rel="stylesheet" href="styles.css">
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700&family=Poppins:wght@400&display=swap" rel="stylesheet">
+</head>
+<body>
+  <div class="background">
+    <!-- Moving Stars -->
+    <div id="stars-container"></div>
+
+    <div class="content">
+  <!-- Logo -->
+  <div class="logo-container">
+    <img src="logo.jpg" alt="Logo" class="logo" id="logo" onclick="toggleMusic()">
+  </div>
+  <!-- Title with Stack Glitch Effect -->
+  <div class="title-container">
+    <div class="stack" style="--stacks: 3;">
+      <span style="--index: 0;">Tool Titan</span>
+      <span style="--index: 1;">Tool Titan</span>
+      <span style="--index: 2;">Tool Titan</span>
+    </div>
+  </div>
+  <!-- Subtitle -->
+  <p class="subtitle">A futuristic AI tool for developers and APIs</p>
+</div>
+
+
+    <!-- Footer with social icons -->
+    <div class="footer">
+      <a href="https://github.com" target="_blank" class="social-icon">
+        <img src="github.png" alt="GitHub">
+      </a>
+      <a href="https://facebook.com" target="_blank" class="social-icon">
+        <img src="facebook.png" alt="Facebook">
+      </a>
+      <a href="https://instagram.com" target="_blank" class="social-icon">
+        <img src="instagram.png" alt="Instagram">
+      </a>
+    </div>
+  </div>
+
+  <!-- Audio -->
+  <audio id="background-music">
+    <source src="music.mp3" type="audio/mp3">
+  </audio>
+
+  <script src="script.js"></script>
+</body>
+</html>
